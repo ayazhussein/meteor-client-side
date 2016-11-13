@@ -63,8 +63,22 @@ cat "$PACKAGES_PATH/ddp-client.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ddp.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/allow-deny.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/mongo.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/localstorage.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-base.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/npm-bcrypt.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/sha.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/srp.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-password.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/oauth.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-oauth.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/oauth2.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/facebook.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-facebook.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/google.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-google.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/oauth/end_of_popup_response.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/oauth/end_of_redirect_response.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/global-imports.js" >> $OUTPUT_PATH/$NAME.bundle.js
-
 # Minify
 npm install uglify-js
 ./node_modules/.bin/uglifyjs $OUTPUT_PATH/$NAME.bundle.js -o $OUTPUT_PATH/$NAME.bundle.min.js
